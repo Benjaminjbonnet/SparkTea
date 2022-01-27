@@ -22,7 +22,7 @@ pipeline {
         }
         stage('DockerBuild') {
       steps {
-        sh 'docker build -t jaslearn/user-rest:latest .'
+        sh 'docker build -t benjaminjbonnet/user-rest:latest .'
       }
         }
          stage('DockerRun') {
