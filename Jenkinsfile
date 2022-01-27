@@ -27,7 +27,7 @@ pipeline {
         }
          stage('DockerRun') {
       steps {
-        sh 'docker run  -p 9090:9090 jaslearn/user-rest'
+        sh 'docker run  -p 9090:9090 benjaminjbonnet/user-rest'
       }
         }
   }
