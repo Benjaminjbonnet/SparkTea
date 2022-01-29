@@ -32,7 +32,7 @@ public class UserJPAResource {
 		
 	}
 	
-	@PostMapping("/users/login")
+	@PostMapping("/login")
 	public ResponseEntity userLogin(@RequestBody Users user) {
 		HttpStatus status = HttpStatus.BAD_REQUEST;
 		String usernameJs =user.getUsername();
