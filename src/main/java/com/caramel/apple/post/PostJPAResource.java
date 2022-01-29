@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://benjaminjbonnet01.s3-website-us-east-1.amazonaws.com")
 public class PostJPAResource {
 
 	
