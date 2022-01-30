@@ -25,7 +25,7 @@ public class UserJPAResource {
 		return userRepository.findAll();
 	}
 	
-	@PostMapping("/users/register")
+	@PostMapping("/register")
 	public Users createUser(@RequestBody Users user) {
 		Users savedUser = userRepository.save(user);
 		return savedUser;
