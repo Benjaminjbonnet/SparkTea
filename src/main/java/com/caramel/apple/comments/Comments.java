@@ -28,13 +28,16 @@ public @Data class Comments {
 	@Column(name = "dat")
 	private String date;
 	
-	@ManyToOne
-	@JoinColumn(name = "userid")
-	private Users user;
+	@Column(name ="username")
+	private String username;
 	
-	@ManyToOne
-	@JoinColumn(name = "postid")
-	private Post post;
+
+	@Column(name = "userid")
+	private int userid;
+	
+	
+	@Column(name = "postid")
+	private int postid;
 	
 	
 

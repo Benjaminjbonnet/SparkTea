@@ -28,10 +28,11 @@ public class Post {
 	
 	@Column(name = "dat")
 	private String date;
+	@Column(name = "username")
+	private String username;
 	
-	@ManyToOne
-	@JoinColumn(name = "userid")
-	private Users user;
+	@Column(name = "userid")
+	private int userid;
 
 	
 	
