@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
       steps {
         sh 'chmod a+x mvnw'
-        sj 'mvn -N io.takari:maven:wrapper'
+        sh 'mvn -N io.takari:maven:wrapper'
         sh './mvnw clean package -DskipTests=true'
       }
 
